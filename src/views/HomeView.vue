@@ -25,7 +25,7 @@ onMounted(async () => {
   <Container v-else :class="'pt-20'">
     <h1 class="font-bold text-xl mb-3">On-Going Anime</h1>
 
-    <div class="w-full grid grid-cols-2 gap-5">
+    <div class="w-full grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-5">
       <Card
         v-for="anime in animes"
         :slug="anime.slug"
