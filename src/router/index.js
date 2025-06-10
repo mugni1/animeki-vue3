@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NotFound from '@/views/NotFound.vue'
+import PlayMovie from '@/views/PlayMovieView.vue'
 import AnimeDetail from '@/views/AnimeDetail.vue'
 
 const router = createRouter({
@@ -8,6 +9,7 @@ const router = createRouter({
   routes: [
     { path: '/', name: 'home', component: HomeView },
     { path: '/detail/:slug', name: 'AnimeDetail', component: AnimeDetail },
+    { path: '/play/:slug', name: 'PlayMovie', component: PlayMovie },
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
     // {
     //   path: '/about',
