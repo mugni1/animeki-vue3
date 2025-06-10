@@ -4,7 +4,6 @@ import Card from '@/components/elements/Card.vue'
 import Container from '@/components/elements/Container.vue'
 import axios from 'axios'
 import Loading from '@/components/layouts/Loading.vue'
-
 const animes = ref([])
 const loading = ref(true)
 
